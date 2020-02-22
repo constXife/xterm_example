@@ -1,0 +1,6 @@
+.gitignore
+node_modules
+.git
+docker-compose*
+lib
+bin

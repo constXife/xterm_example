@@ -1,0 +1,9 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+/.idea/
+/node_modules/
+/public/bundle.js
+/bin/

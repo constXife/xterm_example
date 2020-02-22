@@ -1,0 +1,34 @@
+{
+  "name": "xterm",
+  "version": "1.0.0",
+  "author": "constXife <constxife@yandex.ru>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "shards build && webpack --config assets/webpack.config.js",
+    "build:production": "shards build --static && webpack --config assets/webpack.config.js",
+    "start:server": "crystal src/xterm.cr -- -s",
+    "start:js": "webpack-dev-server --config assets/webpack.config.js",
+    "start": "yarn start:js & yarn start:server"
+  },
+  "devDependencies": {
+    "css-loader": "^3.4.2",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "scss-loader": "^0.0.1",
+    "style-loader": "^1.1.3",
+    "vue-loader": "^15.9.0",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "vue": "^2.6.11",
+    "vue-native-websocket": "^2.0.14",
+    "xterm": "^4.4.0",
+    "xterm-addon-fit": "^0.3.0"
+  }
+}
